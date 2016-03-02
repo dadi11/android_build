@@ -998,7 +998,7 @@ endif
 $(INSTALLED_FILES_FILE): $(FULL_SYSTEMIMAGE_DEPS)
 ifneq ($(SKIP_CHANGELOG), 1)
 	$(hide) ./vendor/du/tools/$(CHANGELOG_FILE)
-	$(hide) mv $(PRODUCT_OUT)/Changelog.txt $(PRODUCT_OUT)/$(PLATFORM_VERSION)-$(TARGET_PRODUCT).txt
+	$(hide) mv $(PRODUCT_OUT)/Changelog.txt $(PRODUCT_OUT)/Changelog-DU-$(TARGET_DEVICE).txt
 endif
 	@echo Installed file list: $@
 	@mkdir -p $(dir $@)
